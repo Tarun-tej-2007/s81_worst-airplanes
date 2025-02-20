@@ -25,3 +25,7 @@ const ReviewSchema = new moongose.Schema({
         ref : 'Airplanes'
     }
 })
+  
+const AirplanesModel = moongose.model('Airplanes',AirplanesSchema);
+const Review = moongose.model('Review',ReviewSchema);
+module.exports = {AirplanesModel,Review};
